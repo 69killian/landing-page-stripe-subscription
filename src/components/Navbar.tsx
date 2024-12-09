@@ -6,6 +6,7 @@ import { ModeToggle } from "./ModeToggle";
 import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
+import Image from "next/image";
 
 interface RouteProps {
 	href: string;
@@ -29,20 +30,18 @@ const routeList: RouteProps[] = [
 
 export const Navbar = () => {
 	const isSubscribed = true;
-	const {isAuthenticated} = useKindeBrowserClient();
+	const { isAuthenticated } = useKindeBrowserClient();
+
 	return (
 		<header
-			className='sticky border-b-[1px] top-0 z-40 w-full  dark:border-b-slate-700 overflow-x-hidden
-			bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60
-		'
+			className='fixed top-4 left-1/2 transform -translate-x-1/2 z-40 w-[90%] max-w-5xl rounded-full shadow-lg border dark:border-slate-700 bg-background/95 
+			backdrop-blur supports-[backdrop-filter]:bg-background/60'
 		>
 			<NavigationMenu className='mx-auto'>
-				<NavigationMenuList className='container min-h-14 w-screen flex justify-between '>
+				<NavigationMenuList className='container h-12 flex items-center justify-between px-4'>
 					<NavigationMenuItem className='font-bold md:flex hidden'>
 						<a rel='noreferrer noopener' href='/' className='ml-2 font-bold text-xl flex'>
-							<span className='uppercase bg-gradient-to-r from-[#667EEA] to-[#764BA2] text-transparent bg-clip-text'>
-								🚀 Next Stripe
-							</span>
+							<Image src="/stripintlogo.png" width={150} height={150} alt="logo" />
 						</a>
 					</NavigationMenuItem>
 
@@ -52,7 +51,7 @@ export const Navbar = () => {
 								rel='noreferrer noopener'
 								href={route.href}
 								key={i}
-								className={`text-[17px] ${buttonVariants({
+								className={`text-[15px] ${buttonVariants({
 									variant: "ghost",
 								})}`}
 							>
@@ -64,7 +63,7 @@ export const Navbar = () => {
 								rel='noreferrer noopener'
 								href={"#"}
 								target='_blank'
-								className={`text-[17px] ${buttonVariants({
+								className={`text-[15px] ${buttonVariants({
 									variant: "ghost",
 								})}`}
 							>
@@ -99,7 +98,6 @@ export const Navbar = () => {
 							<Link
 								rel='noreferrer noopener'
 								href='/premium'
-								// shining animated button with purple gradient
 								className={`border bg-gradient-to-r from-[#667EEA] to-[#764BA2] text-white ${buttonVariants(
 									{
 										variant: "secondary",
@@ -109,8 +107,9 @@ export const Navbar = () => {
 								Premium ✨
 							</Link>
 						)}
-
+						<div>
 						<ModeToggle />
+						</div>
 					</div>
 				</NavigationMenuList>
 			</NavigationMenu>
