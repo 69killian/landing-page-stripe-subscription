@@ -1,0 +1,16 @@
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Flottement vers le haut */
+    }
+    100% {
+      transform: translateY(0); /* Retour à la position d'origine */
+    }
+  }
+  
+  .floating-text {
+    animation: float 2s ease-in-out infinite; /* Animation de 3 secondes, répétée indéfiniment */
+  }
+  
