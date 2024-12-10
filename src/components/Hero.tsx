@@ -44,7 +44,7 @@ export const Hero = () => {
           <main className="text-5xl md:text-6xl font-bold">
             <button className="mb-10 relative inline-flex h-9 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-blue-900 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-blue-900 transition-all duration-300 hover:bg-transparent px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
                 NextJS technology for better integrations &gt;
               </span>
             </button>
@@ -64,7 +64,7 @@ export const Hero = () => {
           </main>
 
           <p className="text-xl text-muted-foreground md:w-10/12 mx-auto font-sans">
-            Stripe subscriptions are intimidating, but they don't have to be. Let's prove it.
+            Stripe integrations are intimidating, but they don't have to be. Let's prove it.
           </p>
 
           {/* Boutons */}
@@ -86,14 +86,14 @@ export const Hero = () => {
         </div>
 
         {/* Image */}
-        <div className="relative z-10">
+        <div className="relative z-10 mt-12">
           <div className="absolute inset-0 rounded-md pointer-events-none"></div>
           <Image
-            src="/dashboardstripe.png"
+            src="/dashboardmid.png"
             width={1320}
             height={512}
             alt="Stripe Course Illustration"
-            className={`rounded-md select-none pointer-events-none transition-all duration-700 ${
+            className={` rounded-md select-none pointer-events-none transition-all duration-700 ${
               loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
             style={{

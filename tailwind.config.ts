@@ -75,6 +75,7 @@ const config = {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
       },
+      
     },
   },
   plugins: [require("tailwindcss-animate")],

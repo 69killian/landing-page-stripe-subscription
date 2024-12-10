@@ -34,8 +34,9 @@ export const Navbar = () => {
 
 	return (
 		<header
-			className='fixed top-4 left-1/2 transform -translate-x-1/2 z-40 w-[90%] max-w-5xl rounded-full shadow-lg border dark:border-slate-700 bg-background/95 
-			backdrop-blur supports-[backdrop-filter]:bg-background/60'
+		className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40 rounded-full shadow-lg border dark:border-slate-700 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 inline-block"
+		style={{
+		  boxShadow: 'inset 0 1px 15px rgba(255, 255, 255, 0.1)',}}  
 		>
 			<NavigationMenu className='mx-auto'>
 				<NavigationMenuList className='container h-12 flex items-center justify-between px-4'>
@@ -92,6 +93,8 @@ export const Navbar = () => {
 							>
 								Login
 							</Link>
+
+							
 						)}
 
 						{isAuthenticated && isSubscribed && (
