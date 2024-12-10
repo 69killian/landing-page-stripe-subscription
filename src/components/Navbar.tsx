@@ -70,7 +70,7 @@ export const Navbar = () => {
 						{isAuthenticated && isSubscribed && (
 							<Link
 								rel='noreferrer noopener'
-								href={"#"}
+								href={process.env.NET_PUBLIC_STRIPE_CUSTOMER_PORTAL_URL!}
 								target='_blank'
 								className={`text-[15px] ${buttonVariants({
 									variant: "ghost",
