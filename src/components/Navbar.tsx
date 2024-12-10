@@ -7,6 +7,8 @@ import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import Image from "next/image";
+import { useQuery } from "@tanstack/react-query";
+import { isUserSubscribed } from "@/app/premium/actions";
 
 interface RouteProps {
 	href: string;
@@ -29,8 +31,14 @@ const routeList: RouteProps[] = [
 ];
 
 export const Navbar = () => {
-	const isSubscribed = true;
 	const { isAuthenticated } = useKindeBrowserClient();
+
+	const { data } = useQuery({
+		queryKey: ["isUserSubscribed"],
+		queryFn: async () => isUserSubscribed()
+	});
+
+	const isSubscribed = data?.subscribed;
 
 	return (
 		<header
