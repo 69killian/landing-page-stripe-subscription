@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import { buttonVariants } from "./ui/button";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
+import LogoMarquee from "./LogoMarquee";
 
 export const Hero = () => {
   const [loaded, setLoaded] = useState(false);
@@ -38,7 +39,7 @@ export const Hero = () => {
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
         rel="stylesheet"
       />
-      <section className="mb-10 container grid place-items-center text-center py-20 md:py-32 gap-10 font-sans">
+      <section className="mb-10 mt-[-40px] container grid place-items-center text-center py-20 md:py-32 gap-10 font-sans">
         {/* Texte principal */}
         <div className="space-y-6">
           <main className="text-5xl md:text-6xl font-bold">
@@ -85,11 +86,14 @@ export const Hero = () => {
           </div>
         </div>
 
+
+        <LogoMarquee/>
+
         {/* Image */}
-        <div className="relative z-10 mt-12">
+        <div className="relative z-10 mt-0">
           <div className="absolute inset-0 rounded-md pointer-events-none"></div>
           <Image
-            src="/dashboardmid.png"
+            src="/dashboardstripeeng.png"
             width={1320}
             height={512}
             alt="Stripe Course Illustration"

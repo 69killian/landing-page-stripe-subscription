@@ -1,0 +1,58 @@
+
+  
+  .marquee {
+    display: flex;
+    animation: marquee 10s linear infinite;
+    will-change: transform;
+  }
+
+  /* Container centré */
+  .marquee-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2rem 0;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Contenu animé */
+  .marquee-content {
+    display: flex;
+    gap: 20rem; /* Ajustez pour espacer les logos */
+    animation: marquee 40s linear infinite;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+  }
+  
+  .marquee-content.appear {
+    opacity: 1;
+  }
+
+  /* Style des logos */
+  .logo-item {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+  }
+
+  .dark-mode .logo-item {
+    filter: invert(1) brightness(2);
+  }
+  
+
+
+  
+  /* Animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
