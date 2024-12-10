@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-blue-700 hover:bg-blue-800 text-primary-foreground",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
@@ -54,3 +54,5 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 Button.displayName = "Button"
 
 export { Button, buttonVariants }
+
+// glass button style px-[45.41px] py-[10.25px] text-[14.66px] font-normal rounded-full border border-[#97BAFF66] bg-gradient-to-r from-[#88B3FD] via-[#4F81FF] to-[#88B3FD] text-transparent bg-clip-text shadow-[inset_0_0_10px_2px_rgba(255,255,255,0.115)] z-10 transition-all duration-300 hover:shadow-[inset_0_0_10px_2px_rgba(255,255,255,0.050)]

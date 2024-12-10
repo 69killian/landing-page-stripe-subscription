@@ -85,7 +85,7 @@ export const Pricing = () => {
 							<CardTitle className='flex item-center justify-between'>
 								{pricing.title}
 								{pricing.popular === PopularPlanType.YES ? (
-									<Badge variant='secondary' className='text-sm text-primary'>
+									<Badge variant='secondary' className='text-sm text-primary text-blue-700'>
 										Most popular
 									</Badge>
 								) : null}
@@ -98,9 +98,7 @@ export const Pricing = () => {
 							<CardDescription>{pricing.description}</CardDescription>
 						</CardHeader>
 
-						<CardContent>
-							<PaymentLink href={pricing.href} text={pricing.buttonText} paymentLink={pricing.paymentLink}/>
-						</CardContent>
+						
 
 						<hr className='w-4/5 m-auto mb-4' />
 
@@ -113,6 +111,9 @@ export const Pricing = () => {
 								))}
 							</div>
 						</CardFooter>
+						<CardContent className=" flex justify-center">
+							<PaymentLink href={pricing.href} text={pricing.buttonText} paymentLink={pricing.paymentLink}/>
+						</CardContent>
 					</Card>
 				))}
 			</div>
