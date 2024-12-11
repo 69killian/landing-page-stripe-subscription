@@ -60,14 +60,15 @@ const pricingList: PricingProps[] = [
 export const Pricing = () => {
 	return (
 		<section id='pricing' className='container py-24 sm:py-32'>
-			<h2 className='text-3xl md:text-4xl font-bold text-center'>
-				Get
-				<span className='bg-gradient-to-b from-[#667EEA] to-[#764BA2] uppercase text-transparent bg-clip-text'>
-					{" "}
-					Unlimited{" "}
-				</span>
-				Access
-			</h2>
+			<section className="text-5xl md:text-6xl font-bold flex text-center justify-center mb-10">
+          <h1 className="font-sans">
+		  Outstanding services at{" "}
+            <span className="bg-gradient-to-r from-[#2B65E2] via-[#537DE5] to-[#2B65E280] text-transparent bg-clip-text">
+			unbeatable
+            </span>{" "}
+            prices
+          </h1>
+        </section>
 			<h3 className='text-xl text-center text-muted-foreground pt-4 pb-8'>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis.
 			</h3>

@@ -7,9 +7,10 @@ import './FeaturesDescription.css';
 const FeaturesDescription = () => {
   return (
     <>
-      <main className="py-[250px] relative">
+    
+      <main className="py-[100px] relative">
         <div
-          className="absolute top-0 left-1/2 w-[1500px] h-[1200px] transform -translate-x-1/2 rounded-full 
+          className="absolute top-0 left-1/2 w-[1500px] h-[1500px] transform -translate-x-1/2 rounded-full 
                       bg-gradient-to-b from-blue-700 via-transparent to-transparent 
                       opacity-30 blur-[300px]"
         ></div>
