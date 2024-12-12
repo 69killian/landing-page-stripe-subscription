@@ -65,7 +65,7 @@ export const Hero = () => {
           </main>
 
           <p className="text-xl text-muted-foreground md:w-10/12 mx-auto font-sans">
-            Stripe integrations are intimidating, but they don't have to be. Let's prove it.
+            Stripe integrations are intimidating, but they don&apos;t have to be. Let&apos;s prove it.
           </p>
 
           {/* Boutons */}

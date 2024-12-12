@@ -40,7 +40,7 @@ const FAQ = () => {
         <h1 className="font-sans relative">
           Got Questions? <br />
           <span className="bg-gradient-to-r from-[#2B65E2] via-[#537DE5] to-[#2B65E280] text-transparent bg-clip-text">
-            We've Got Answers!
+            We&apos;ve Got Answers!
           </span>
         </h1>
       </section>

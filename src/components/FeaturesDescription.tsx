@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion"; // Import de framer-motion
+import { motion } from "framer-motion"; 
 import { FeaturesSectionDemo } from "./FeaturesSectionDemo";
 import './FeaturesDescription.css';
 
@@ -14,13 +14,13 @@ const FeaturesDescription = () => {
                       opacity-30 blur-[300px]"
         ></div>
         
-        {/* Animation au scroll du titre */}
+        
         <motion.section
           className="text-5xl md:text-6xl font-bold flex text-center justify-center mb-20"
-          initial={{ opacity: 0, y: 50 }} // Départ invisible et décalé
-          whileInView={{ opacity: 1, y: 0 }} // Devient visible et se place à sa position
-          transition={{ duration: 0.6 }} // Durée de l'animation
-          viewport={{ once: true, amount: 0.5 }} // Animation déclenchée au milieu du contenu
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }} 
+          viewport={{ once: true, amount: 0.5 }} 
         >
           <h1 className="font-sans floating-text">
             Why Everybody{" "}
@@ -31,7 +31,7 @@ const FeaturesDescription = () => {
           </h1>
         </motion.section>
         
-        {/* Appel du composant FeaturesSectionDemo pour afficher les cartes de fonctionnalités */}
+        
         <FeaturesSectionDemo />
       </main>
     </>

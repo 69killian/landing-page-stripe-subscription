@@ -25,7 +25,7 @@ const LogoMarquee = () => {
     // Mise à jour initiale
     updateDarkMode();
 
-    // Observer pour surveiller les changements de classe sur <html>
+    // Observe pour surveiller les changements de classe sur <html>
     const observer = new MutationObserver(updateDarkMode);
     observer.observe(root, { attributes: true, attributeFilter: ['class'] });
 
@@ -51,12 +51,12 @@ const LogoMarquee = () => {
   }, []);
 
   useEffect(() => {
-    // Force the reset of the animation every 20 seconds
+    // Force le reset de l'animation toutes les 20 secondes
     const interval = setInterval(() => {
-      setKey((prevKey) => prevKey + 1); // Changing the key to force a re-render
-    }, 20000); // Every 20 seconds
+      setKey((prevKey) => prevKey + 1); 
+    }, 20000); // toutes les 20 secondes
 
-    // Cleanup interval on component unmount
+    
     return () => clearInterval(interval);
   }, []);
 

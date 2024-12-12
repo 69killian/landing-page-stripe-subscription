@@ -1,3 +1,4 @@
+"use client";
 import FeaturesDescription from "@/components/FeaturesDescription";
 import { Hero } from "@/components/Hero";
 import {MarqueeDemoVertical} from "@/components/MarqueeDemoVertical";
