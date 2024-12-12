@@ -90,7 +90,9 @@ export const Hero = () => {
         <LogoMarquee/>
 
         {/* Image */}
-        <div style={{transform: `perspective(1500px) rotateX(${tilt}deg)`, WebkitMaskImage: "linear-gradient(to bottom, black 80%, transparent 100%)",}} className=" shadow relative z-10 mt-0 p-5 bg-gray-100 rounded-xl border-2 border-blue-100 backdrop-blur-sm bg-blue-100/20 dark:border-blue-900/20 dark:bg-blue-900/20" >
+        <div style={{transform: `perspective(1500px) rotateX(${tilt}deg)`, WebkitMaskImage: "linear-gradient(to bottom, black 80%, transparent 100%)",}} className={` shadow relative z-10 mt-0 p-5 bg-gray-100 rounded-xl border-2 border-blue-300/20 backdrop-blur-sm bg-blue-100/10 dark:border-blue-900/20 dark:bg-blue-900/20 ${
+              loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            }`} >
           <div className="absolute inset-0 rounded-md pointer-events-none"></div>
           <Image
             src="/dashboardstripeeng.png"

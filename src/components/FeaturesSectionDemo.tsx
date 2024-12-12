@@ -10,7 +10,7 @@ import {
   IconRouteAltLeft,
   IconTerminal2,
 } from "@tabler/icons-react";
-import FeatureCards from "./FeatureCards"; // Assurez-vous que ce composant est bien importé
+import FeatureCards from "./FeatureCards";
 
 export function FeaturesSectionDemo() {
   const features = [
