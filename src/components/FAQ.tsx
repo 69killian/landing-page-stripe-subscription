@@ -1,10 +1,8 @@
-"use client";
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const FAQ = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const faqs = [
     {
@@ -29,21 +27,22 @@ const FAQ = () => {
     },
   ];
 
-  const toggleFAQ = (index) => {
+  // Ajout du type explicite pour 'index'
+  const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
     <section className="py-12 px-4 mb-[100px]">
       <div className="max-w-4xl mx-auto">
-            <section className="text-5xl md:text-6xl font-bold flex text-center justify-center mb-10">
-        <h1 className="font-sans relative">
-          Got Questions? <br />
-          <span className="bg-gradient-to-r from-[#2B65E2] via-[#537DE5] to-[#2B65E280] text-transparent bg-clip-text">
-            We&apos;ve Got Answers!
-          </span>
-        </h1>
-      </section>
+        <section className="text-5xl md:text-6xl font-bold flex text-center justify-center mb-10">
+          <h1 className="font-sans relative">
+            Got Questions? <br />
+            <span className="bg-gradient-to-r from-[#2B65E2] via-[#537DE5] to-[#2B65E280] text-transparent bg-clip-text">
+              We&apos;ve Got Answers!
+            </span>
+          </h1>
+        </section>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div

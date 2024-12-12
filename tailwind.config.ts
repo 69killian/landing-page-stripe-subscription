@@ -9,11 +9,7 @@ const config = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
-    extend: {
-      screens: {
-        "2xl": "1400px",         
-      },
-    },
+      
     container: {
       center: true,
       padding: "2rem",
@@ -22,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "2xl": "1400px",         
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
