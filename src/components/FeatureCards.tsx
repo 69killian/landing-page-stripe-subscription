@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { motion } from "framer-motion"; // Import de framer-motion
 import { cn } from "@/lib/utils";
 
 type FeatureCardProps = {
@@ -11,12 +12,16 @@ type FeatureCardProps = {
 
 const FeatureCards: React.FC<FeatureCardProps> = ({ title, description, icon, index }) => {
   return (
-    <div
+    <motion.div
       className={cn(
         "flex flex-col lg:border-r py-10 relative group/feature dark:border-neutral-800",
         (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
         index < 4 && "lg:border-b dark:border-neutral-800"
       )}
+      initial={{ opacity: 0, y: 50 }} // Départ invisible et décalé
+      whileInView={{ opacity: 1, y: 0 }} // Devient visible et se place à sa position
+      transition={{ duration: 0.5 }} // Durée de l'animation
+      viewport={{ once: true, amount: 0.5 }} // Animation déclenchée au milieu du contenu
     >
       {index < 4 && (
         <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
@@ -36,7 +41,7 @@ const FeatureCards: React.FC<FeatureCardProps> = ({ title, description, icon, in
       <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
         {description}
       </p>
-    </div>
+    </motion.div>
   );
 };
 
