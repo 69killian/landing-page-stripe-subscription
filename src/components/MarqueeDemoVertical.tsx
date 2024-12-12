@@ -106,7 +106,7 @@ export function MarqueeDemoVertical() {
     <div className="relative flex h-[500px] w-full flex-row items-center justify-center overflow-hidden rounded-lg bg-background mb-[200px]">
       <section className="text-5xl md:text-6xl font-bold flex text-center justify-center mb-20 sm:text-none">
         <h1 className="font-sans floating-text">
-          Here's What They{" "}
+          Here&apos;s What They{" "}
           <span className="bg-gradient-to-r from-[#2B65E2] via-[#537DE5] to-[#2B65E280] text-transparent bg-clip-text">
             Think
           </span>{" "}
