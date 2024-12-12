@@ -8,7 +8,7 @@ const FeaturesDescription = () => {
   return (
     <>
     
-      <main className="py-[100px] relative">
+      <main className="py-[100px] relative mb-[200px]">
         <div
           className="absolute top-0 left-1/2 w-[1500px] h-[1500px] transform -translate-x-1/2 rounded-full 
                       bg-gradient-to-b from-blue-700 via-transparent to-transparent 
@@ -16,7 +16,7 @@ const FeaturesDescription = () => {
         ></div>
         <section className="text-5xl md:text-6xl font-bold flex text-center justify-center mb-20">
           <h1 className="font-sans floating-text">
-            Why everybody{" "}
+            Why Everybody{" "}
             <span className="bg-gradient-to-r from-[#2B65E2] via-[#537DE5] to-[#2B65E280] text-transparent bg-clip-text">
               Trusted
             </span>{" "}

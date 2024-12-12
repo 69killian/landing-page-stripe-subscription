@@ -59,17 +59,17 @@ const pricingList: PricingProps[] = [
 
 export const Pricing = () => {
 	return (
-		<section id='pricing' className='container py-24 sm:py-32'>
+		<section id='pricing' className='container py-24 sm:py-32 mb-[200px]'>
 			<section className="text-5xl md:text-6xl font-bold flex text-center justify-center mb-10">
-  <h1 className="font-sans relative">
-    Outstanding services at{" "}
-    <span className="bg-gradient-to-r from-[#2B65E2] via-[#537DE5] to-[#2B65E280] text-transparent bg-clip-text">
-      unbeatable
-    </span>{" "}
-    prices
-    <span className="absolute inset-0 bg-gradient-to-r from-[#2B65E2] via-[#537DE5] to-[#2B65E280] opacity-30 blur-xl"></span> 
-  </h1>
-</section>
+			<h1 className="font-sans relative">
+				Outstanding Services At{" "}
+				<span className="bg-gradient-to-r from-[#2B65E2] via-[#537DE5] to-[#2B65E280] text-transparent bg-clip-text">
+				Unbeatable
+				</span>{" "}
+				Prices
+				<span className="absolute inset-0 bg-gradient-to-r from-[#2B65E2] via-[#537DE5] to-[#2B65E280] opacity-30 blur-xl"></span> 
+			</h1>
+			</section>
 
 			<h3 className='text-xl text-center text-muted-foreground pt-4 pb-8'>
 			Choose from our flexible plans tailored to meet your needs, with no hidden fees and 100% transparency.

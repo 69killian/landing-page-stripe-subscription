@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import {MarqueeDemoVertical} from "@/components/MarqueeDemoVertical";
 import { Pricing } from "@/components/Pricing";
 import Footer from "@/components/Footer";
+import FAQ from "@/components/FAQ";
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 			<FeaturesDescription/>
 			<MarqueeDemoVertical/>
 			<Pricing />
+			<FAQ/>
 			<Footer/>
 		</main>
 	);

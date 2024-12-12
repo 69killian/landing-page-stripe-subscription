@@ -55,7 +55,7 @@ export const Hero = () => {
               <span className="bg-gradient-to-r from-[#2B65E2] via-[#537DE5] to-[#2B65E280] text-transparent bg-clip-text">
                 Stripe
               </span>{" "}
-              Integration in
+              Integration In
             </h1>
             <h2>
               <span className="text-[80px] text-white bg-blue-900 rounded-[10px] px-5 inline-block transform rotate-6 transition-transform duration-300 hover:rotate-0">
