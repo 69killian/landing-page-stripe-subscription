@@ -123,31 +123,36 @@ export function MarqueeDemoVertical() {
         </h1>
       </section>
 
+      {/* Première rangée visible */}
       <div className="flex flex-col gap-4 animate-marquee-vertical">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </div>
 
-      <div className="flex flex-col gap-4 animate-marquee-vertical-reverse">
+      {/* Deuxième rangée masquée sur petits écrans */}
+      <div className="hidden sm:flex flex-col gap-4 animate-marquee-vertical-reverse">
         {secondRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </div>
 
-      <div className="flex flex-col gap-4 animate-marquee-vertical">
+      {/* Troisième rangée masquée sur petits écrans */}
+      <div className="hidden sm:flex flex-col gap-4 animate-marquee-vertical">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </div>
 
-      <div className="flex flex-col gap-4 animate-marquee-vertical-reverse">
+      {/* Quatrième rangée masquée sur petits écrans */}
+      <div className="hidden sm:flex flex-col gap-4 animate-marquee-vertical-reverse">
         {secondRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </div>
 
-      <div className="flex flex-col gap-4 animate-marquee-vertical">
+      {/* Cinquième rangée masquée sur petits écrans */}
+      <div className="hidden sm:flex flex-col gap-4 animate-marquee-vertical">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
@@ -158,3 +163,4 @@ export function MarqueeDemoVertical() {
     </div>
   );
 }
+
