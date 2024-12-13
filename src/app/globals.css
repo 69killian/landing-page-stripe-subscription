@@ -67,10 +67,11 @@
 	height: 100%;
 	background: radial-gradient(circle at top, rgba(43, 101, 226, 0.5), transparent 70%);
 	z-index: -1; /* Ensure the background stays behind the content */
+	overflow: hidden;
 }
 
 
 body {
 	font-family: 'Poppins', sans-serif;
-	overflow-x: hidden;
   }
+
