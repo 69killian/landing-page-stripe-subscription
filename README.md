@@ -1,7 +1,7 @@
 # (FR) Stripint
 ![Logo](logostripint.png)
 
-[![Lien du site déployé]()](https://landing-page-stripe-subscription-gt5rnuxa3-69killians-projects.vercel.app/)
+[![Lien du site déployé]()](https://landing-page-stripe-subscription.vercel.app/)
 
 Force de mes 2 années d'expériences, et de mon travail acharné pour améliorer mes process et mes designs signatures pour mes sites, je suis fier de vous présenter un de mes meilleurs projets : **Stripint**, une solution (fictive) qui est une solution d'intégration Stripe pour vos sites internet en quelques minutes ! 
 
