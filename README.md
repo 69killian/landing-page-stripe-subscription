@@ -27,7 +27,7 @@ Mon objectif principal à travers Stripint est de démontrer :
 - **Next.js** : Rendu côté serveur et l'optimisation des performances
 - **Tailwind** : Designs rapides et évolutifs, faciles à reprendre
 - **Prisma ORM** : Très utile pour la gestion des interactions avec MongoDB de manière simple
-- **MongoDB** : Base de données NoSQL robuste
+- **MongoDB** : Base de données NoSQL rapide a créer
 - **TypeScript** : Pour un code typé et une meilleure qualité de développement sans erreurs
 - **Kinde** : Solution d'authentification sécurisée grâce au prestataire
 - **Stripe** : Gestion des paiements et des abonnements du site
